@@ -49,4 +49,6 @@ sudo service vsftpd restart
 
 sudo useradd -m ftpuser
 echo -e "0O9i8u7y\n0O9i8u7y" | sudo passwd ftpuser
-sudo bash -c "echo FTP TESTING > /home/ftpuser/FTP-TEST"
+
+sudo mkdir /home/ftpuser/homenet
+sudo bash -c "echo FTP TESTING > /home/ftpuser/homenet/FTP-TEST"
