@@ -70,8 +70,8 @@ resource "aws_security_group" "default" {
 
   ingress {
     protocol  = "tcp"
-    from_port = 1024
-    to_port   = 1048
+    from_port = 10000
+    to_port   = 10100
 
     cidr_blocks = ["${var.allowed_cidr_blocks}"]
   }
