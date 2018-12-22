@@ -103,7 +103,7 @@ resource "aws_instance" "default" {
 
   key_name = "${var.key_name}"
 
-  subnet_id = "${data.terraform_remote_state.vpc.public_subnets[0]}"
+  subnet_id = "${data.terraform_remote_state.vpc.private_subnets[0]}"
 
   tags = "${merge(map("Name", format("%s", var.name)), var.tags)}"
 }
